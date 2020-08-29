@@ -1,0 +1,45 @@
+footer{
+   background-color: hsl(215, 15%, 22%);;
+   color: aliceblue;
+   text-align: center;
+   height: 50px;
+}
+header{
+   background-color: hsl(215, 15%, 22%);
+}
+h1{
+   text-align: center;
+   color: aliceblue;
+   margin-top: 0;
+   padding-bottom: 20px;
+}
+ul {
+   position: relative;
+   list-style-type: none;
+   margin: 5px 0 0 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: hsl(215, 15%, 22%);;
+ }
+ 
+ li {
+   float: left;
+ }
+ 
+ li a {
+   display: block;
+   color: aliceblue;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ li a:hover {
+   background-color: #111;
+ }
+ img {
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 5px;
+   width: 500px;
+   height: auto;
+ }
