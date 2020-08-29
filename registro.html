@@ -21,8 +21,56 @@
       <h1>La cocina de Nico</h1>
    </header>
    <article>
-      <h2>Registro
-      </h2>
+      <h2>Registro</h2>
+      <form id="formulario">
+         <label for="nombre">Nombres:</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres aquí..." required>
+         <label for="apellido">Apellidos:</label>
+         <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos aquí..." required>
+         <label for="genero">Genero:</label>
+         <select id="genero" name="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="otro">Otro</option>
+            <option value="none" selected>Prefiero no indicar</option>
+         </select>
+         <label for="cumple">Fecha Nac:</label>
+         <input type="date" id="cumple" min="1980-01-01" max="2000-01-01" required>
+         <label for="mail">Mail:</label>
+         <input type="email" id="mail" placeholder="direccion@dominio.com" required>
+         <br><br>
+         <fieldset>
+            <legend>Direccion</legend>
+            <label for="calle">Calle</label>
+            <input type="text" id="calle" name="calle" placeholder="Ingrese domicilio aquí..." required>
+            <label for="alturanum">Calle</label>
+            <input type="text" id="alturanum" name="alturanum" placeholder="Ingrese número aquí..." required>
+            <label for="ciudad">Ciudad</label>
+            <select id="genero" name="gender">
+               <option value="caba">CABA</option>
+               <option value="bue">Buenos Aires</option>
+               <option value="cor">Cordoba</option>
+               <option value="mis">Misiones</option>
+            </select>
+         </fieldset>
+         <br>
+         <fieldset>
+            <legend>Educación:</legend>
+            <label for="primario">Primario</label>
+            <input type="radio" name="educacion" id="primario" value="primario" required>
+            <label for="secundario">Secundario</label>
+            <input type="radio" name="educacion" id="secundario" value="secundario">
+            <label for="terciario">Terciario</label>
+            <input type="radio" name="educacion" id="terciario" value="terciario">
+            <label for="universitario">Universitario</label>
+            <input type="radio" name="educacion" value="universitario" value="universitario">
+         </fieldset>
+         <br><br>
+         <button type="submit">Enviar</button>
+         <br><br>
+      </form>
+      <label>Comentarios:</label><br>
+      <textarea rows="4" cols="50" name="comentario" form="formulario">Escriba aquí...</textarea>
    </article>
    <footer>
       <div id="socialnetworks"></div>
