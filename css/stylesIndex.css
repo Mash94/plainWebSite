@@ -1,0 +1,95 @@
+footer{
+   background-color: hsl(215, 15%, 22%);;
+   color: aliceblue;
+   text-align: center;
+   height: 50px;
+}
+header{
+   background-color: hsl(215, 15%, 22%);
+}
+h1{
+   text-align: center;
+   color: aliceblue;
+   margin-top: 0;
+   padding-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+}
+nav {
+  align-items: center;
+}
+ul {
+   position: relative;
+   list-style-type: none;
+   margin: 5px 0 0 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: hsl(215, 52%, 38%);
+ }
+ 
+ li {
+   float: right;
+   width: 25%;
+ }
+ 
+ li a {
+   display: block;
+   color: aliceblue;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ li a:hover {
+   background-color: hsl(215, 72%, 20%);
+ }
+ img {
+   position: relative;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 5px;
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+ }
+
+p, h1, h2, a {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+section {
+  width: 100%;
+  display: table;
+}
+article {
+  float: left;
+  width: 55%;
+  margin: 10px;
+}
+
+aside {
+  float: right;
+  width: 40%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  article {
+    float: none;
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  aside {
+    float: none;
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    max-width: 600px;
+    margin: 0px
+  }
+  body{
+    margin: 1px;
+  }
+  li {
+    float: none;
+    width: 100%;
+  }
+}
