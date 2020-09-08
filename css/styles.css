@@ -90,6 +90,14 @@ aside {
   margin: 20px;
 }
 
+iframe {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 20px;
+}
+
+
 @media screen and (max-width: 800px) {
   article {
     float: none;
@@ -109,3 +117,4 @@ aside {
     width: 100%;
   }
 }
+
