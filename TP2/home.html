@@ -48,7 +48,94 @@
       <div id="copyrigths">Derechos reservados @2020</div>
    </footer>
    <script>
-
+      function lista (){
+         if(document.getElementById("botonIngredientesLista").value=="Ingredientes en Lista"){
+            document.getElementById("ingredientes").innerHTML = 
+            `
+            <ul>
+               <li>600-800 g de carne de vaca (normalmente la de la pata o mezcla de carnes blandas y jugosas)</li>
+               <li>2 cebollas grandes</li>
+               <li>3-4 cucharadas de manteca o aceite</li>
+               <li>1 tomate</li>
+               <li>1 pimiento</li>
+               <li>Sal, pimienta, pimentón (dulce o picante dependiendo del gusto), perejil y comino en polvo</li>
+               <li>2-3 dientes de ajo</li>
+               <li>2-3 zanahorias, un poco de apio y un trozo de chirivías o nabo *</li>
+               <li>400-500 g de patatas</li>
+               <li>Agua</li>
+               <li>Opcional: hojas de laurel, pasta o ñoquis</li>
+            </ul> 
+            `;
+         document.getElementById("botonIngredientesLista").value="Ocultar";
+         document.getElementById("botonIngredientesTabla").value="Ingredientes en Tabla";
+         }else{
+            document.getElementById("ingredientes").innerHTML = "";
+            document.getElementById("botonIngredientesLista").value="Ingredientes en Lista";
+         }   
+      }
+      function tabla (){
+         if(document.getElementById("botonIngredientesTabla").value=="Ingredientes en Tabla"){
+            document.getElementById("ingredientes").innerHTML = 
+            `
+            <table>
+               <thead>
+                  <th>Cant</th>
+                  <th>Ingrediente</th>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>600-800 g</td>
+                     <td>Carne de vaca (normalmente la de la pata o mezcla de carnes blandas y jugosas)</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>Cebollas</td>
+                  </tr>
+                  <tr>
+                     <td>3-4</td>
+                     <td>Cucharadas de manteca o aceite</td>
+                  </tr>
+                  <tr>
+                     <td>1</td>
+                     <td>Tomate</td>
+                  </tr>
+                  <tr>
+                     <td>1</td>
+                     <td>Pimiento</td>
+                  </tr>
+                  <tr>
+                     <td>X</td>
+                     <td>Sal, pimienta, pimentón (dulce o picante dependiendo del gusto), perejil y comino en polvo</td>
+                  </tr>
+                  <tr>
+                     <td>2-3</td>
+                     <td>Dientes de ajo</td>
+                  </tr>                  
+                  <tr>
+                     <td>2-3</td>
+                     <td>zanahorias, un poco de apio y un trozo de chirivías o nabo</td>
+                  </tr>                  
+                  <tr>
+                     <td>400-500 g</td>
+                     <td>Patatas</td>
+                  </tr>
+                  <tr>
+                     <td>1L</td>
+                     <td>Agua</td>
+                  </tr>
+                  <tr>
+                     <td>X</td>
+                     <td>Opcional: hojas de laurel, pasta o ñoquis</td>
+                  </tr>
+               </tbody>
+            `;
+         document.getElementById("botonIngredientesTabla").value="Ocultar";
+         document.getElementById("botonIngredientesLista").value="Ingredientes en Lista";
+         }else{
+            document.getElementById("ingredientes").innerHTML = "";
+            document.getElementById("botonIngredientesTabla").value="Ingredientes en Tabla";
+         }   
+      }
    </script>
 </body>
 </html>
