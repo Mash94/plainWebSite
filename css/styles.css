@@ -70,7 +70,7 @@ img {
 }
 
 
-p, h1, h2, h3, a, li {
+p, h1, h2, h3, a, li,td,th {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
