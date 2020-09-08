@@ -22,7 +22,7 @@ ul {
   margin: 5px 0 0 0;
   padding: 0;
   overflow: hidden;
-  background-color: hsl(215, 15%, 22%);;
+  background-color: hsl(215, 15%, 22%);
 }
  
 li {
@@ -38,7 +38,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: hsl(218, 13%, 12%);
 }
 
 img {
@@ -48,6 +48,16 @@ img {
   width: 500px;
   height: auto;
 }
+
+.porfolio {
+  float: right;
+  background-color: hsl(215, 52%, 38%);
+}
+
+.porfolio a:hover {
+  background-color: hsl(215, 72%, 20%);
+}
+
 
 p, h1, h2, a {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
