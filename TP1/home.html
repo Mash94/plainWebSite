@@ -10,22 +10,67 @@
 <body>
    <header>
       <nav>
-         <ul>
-            <li><a href="https://mash94.github.io/plainWebSite/TP1/home.html">Home</a></li>
-            <li><a href="https://mash94.github.io/plainWebSite/TP1/acercade.html">Acerca de</a></li>
-            <li><a href="https://mash94.github.io/plainWebSite/TP1/contacto.html">Contacto</a></li>
+         <ul class="navUl">
+            <li class="navLi"><a href="https://mash94.github.io/plainWebSite/TP1/home.html">Home</a></li>
+            <li class="navLi"><a href="https://mash94.github.io/plainWebSite/TP1/acercade.html">Acerca de</a></li>
+            <li class="navLi"><a href="https://mash94.github.io/plainWebSite/TP1/contacto.html">Contacto</a></li>
             <li class="porfolio"><a href="https://mash94.github.io/plainWebSite/index.html">Porfolio TPs</a></li>
          </ul> 
       </nav>
       <h1>La cocina de Nico</h1>
    </header>
-   <article>
-      <h2>Main</h2>
-      <img src="../images/pancakes-2020863_1280.jpg" alt="panqueques">
-   </article>
+   <section>
+      <article>
+         <h2>Sopa de Goulash</h2>
+         <h3>Receta:</h3>
+         <p>
+            Preparamos la base de la sopa según la receta del gulash. Lo enriquecemos con comino en polvo y 
+            hojas de laurel (opcional). El tomate y el pimiento se pueden echar desde el principio.
+         </p>
+         <p>
+            Cuando la carne esté medio hecha, le añadimos un poco más de agua, las zanahorias, el nabo, 
+            el apio (las hojas también) y el perejil. 15-20 minutos más tarde la patata.
+         </p>
+         <p>
+            Si queremos podemos enriquecerlo con pasta, la añadimos a los últimos 10 minutos de la cocción. 
+            También se sirve con pan.
+         </p>
+         <input type="button" id="botonIngredientes" onclick="ingredientes()" value="Ingredientes">
+         <div id="ingredientes"></div>
+      </article>
+      <aside>
+         <img src="../images/goulash-soup.jpg" alt="goulash-soup">
+      </aside> 
+   </section>
    <footer>
       <div id="socialnetworks"></div>
       <div id="copyrigths">Derechos reservados @2020</div>
    </footer>
+   <script>
+      function ingredientes (){
+         if(document.getElementById("botonIngredientes").value=="Ingredientes"){
+            document.getElementById("ingredientes").innerHTML = 
+            `
+            <ul>
+               <li>600-800 g de carne de vaca (normalmente la de la pata o mezcla de carnes blandas y jugosas)</li>
+               <li>2 cebollas grandes</li>
+               <li>3-4 cucharadas de manteca o aceite</li>
+               <li>1 tomate</li>
+               <li>1 pimiento</li>
+               <li>Sal, pimienta, pimentón (dulce o picante dependiendo del gusto), perejil y comino en polvo</li>
+               <li>2-3 dientes de ajo</li>
+               <li>2-3 zanahorias, un poco de apio y un trozo de chirivías o nabo *</li>
+               <li>400-500 g de patatas</li>
+               <li>Agua</li>
+               <li>Opcional: hojas de laurel, pasta o ñoquis</li>
+            </ul> 
+            `;
+         document.getElementById("botonIngredientes").value="Ocultar";
+         }else{
+            document.getElementById("ingredientes").innerHTML = "";
+            document.getElementById("botonIngredientes").value="Ingredientes";
+         }   
+      }
+   </script>
 </body>
 </html>

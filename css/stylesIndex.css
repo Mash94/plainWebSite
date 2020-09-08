@@ -4,9 +4,11 @@ footer{
   text-align: center;
   height: 50px;
 }
+
 header{
   background-color: hsl(215, 15%, 22%);
 }
+
 h1{
   text-align: center;
   color: aliceblue;

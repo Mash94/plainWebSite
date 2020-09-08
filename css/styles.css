@@ -16,7 +16,11 @@ h1{
   padding-bottom: 20px;
 }
 
-ul {
+h2{
+  text-align: center;
+}
+
+.navUl {
   position: relative;
   list-style-type: none;
   margin: 5px 0 0 0;
@@ -25,11 +29,11 @@ ul {
   background-color: hsl(215, 15%, 22%);
 }
  
-li {
+.navLi {
   float: left;
 }
  
-li a {
+.navLi a {
   display: block;
   color: aliceblue;
   text-align: center;
@@ -37,19 +41,26 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.navLi a:hover {
   background-color: hsl(218, 13%, 12%);
 }
 
 img {
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
 }
 
-.porfolio {
+.porfolio a {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   float: right;
   background-color: hsl(215, 52%, 38%);
 }
@@ -59,6 +70,42 @@ img {
 }
 
 
-p, h1, h2, a {
+p, h1, h2, h3, a, li {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+section {
+  width: 100%;
+  display: table;
+}
+article {
+  float: left;
+  width: 55%;
+  margin: 10px;
+}
+
+aside {
+  float: right;
+  width: 40%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  article {
+    float: none;
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  aside {
+    float: none;
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    max-width: 600px;
+    margin: 0px
+  }
+  body{
+    margin: 1px;
+  }
+  li {
+    float: none;
+    width: 100%;
+  }
 }
